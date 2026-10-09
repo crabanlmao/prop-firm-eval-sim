@@ -1,0 +1,16 @@
+[project]
+name = "prop-firm-eval-sim"
+version = "0.1.0"
+description = "Pass/bust probability for prop firm evaluations with trailing drawdown, from a daily P&L sequence."
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
